@@ -84,8 +84,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
   3. Check dual eligibility condition: `Intermediate Percentage >= 60.0%` AND `Entry-Test Percentage >= 50.0%`.
   4. If ineligible, output granular diagnostic explanation (failed intermediate, failed entry test, or failed both).
 - **Expected Outputs:** Applicant name, both percentages formatted to 2 decimal places, eligibility status (`ELIGIBLE` / `NOT ELIGIBLE`), and failure reason if applicable.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 01 Windows Terminal Run](screenshots/scenario_01_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 01 Code Snippet](screenshots/scenario_01_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 01 Terminal Run](screenshots/scenario_01_run.png)
 
 ---
 
@@ -103,8 +105,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
      - If `units <= 200`: `bill = (100 * 10) + ((units - 100) * 15)`
      - If `units > 200`: `bill = (100 * 10) + (100 * 15) + ((units - 200) * 20)`
 - **Expected Outputs:** Consumer name, units consumed, and total progressive bill in Rs.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 02 Windows Terminal Run](screenshots/scenario_02_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 02 Code Snippet](screenshots/scenario_02_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 02 Terminal Run](screenshots/scenario_02_run.png)
 
 ---
 
@@ -120,8 +124,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
   3. Print status checklist of missing vs. satisfied rules without printing the plain password text (security compliance).
   4. Reprompt until an acceptable password is provided or the user types `'STOP'`.
 - **Expected Outputs:** Rule checklist evaluation, acceptability status, and prompt iteration.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 03 Windows Terminal Run](screenshots/scenario_03_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 03 Code Snippet](screenshots/scenario_03_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 03 Terminal Run](screenshots/scenario_03_run.png)
 
 ---
 
@@ -135,8 +141,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
      - `discount = 0.10 * total_subtotal` (if `total_subtotal >= 1000.0`, else `0.0`)
      - `final_bill = total_subtotal - discount`
 - **Expected Outputs:** Item addition acknowledgments, itemized receipt with subtotal, discount amount, and final total payable.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 04 Windows Terminal Run](screenshots/scenario_04_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 04 Code Snippet](screenshots/scenario_04_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 04 Terminal Run](screenshots/scenario_04_run.png)
 
 ---
 
@@ -153,8 +161,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
   4. Classify position: "Within Budget", "Budget Exhausted", or "Overspending".
   5. Trigger explicit warning if spent percentage > 80.0%.
 - **Expected Outputs:** Summary report with allowance, total expenditure, remaining balance, percentage spent, and financial status.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 05 Windows Terminal Run](screenshots/scenario_05_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 05 Code Snippet](screenshots/scenario_05_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 05 Terminal Run](screenshots/scenario_05_run.png)
 
 ---
 
@@ -171,8 +181,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
   3. If age >= 60, apply a 20% senior citizen discount on the base fare (`discount = 0.20 * base_fare`).
   4. Calculate payable fare: `final_fare = base_fare - discount`.
 - **Expected Outputs:** Formatted ticket displaying distance, age, base fare, discount amount, and final payable fare.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 06 Windows Terminal Run](screenshots/scenario_06_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 06 Code Snippet](screenshots/scenario_06_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 06 Terminal Run](screenshots/scenario_06_run.png)
 
 ---
 
@@ -188,8 +200,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
      - Else: discount rate = 0%
   4. Calculate `final_bill = subtotal - (subtotal * discount_rate)`.
 - **Expected Outputs:** Checkout summary showing total items purchased, gross subtotal, applied discount percentage, discount savings, and net bill.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 07 Windows Terminal Run](screenshots/scenario_07_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 07 Code Snippet](screenshots/scenario_07_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 07 Terminal Run](screenshots/scenario_07_run.png)
 
 ---
 
@@ -205,8 +219,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
      - Days beyond 10: Rs. 50 per day.
      - Formula for > 10 days: `total_fine = (5 * 10) + (5 * 20) + ((days_late - 10) * 50)`
 - **Expected Outputs:** Library fine statement detailing book title, student name, days late, and computed progressive fine.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 08 Windows Terminal Run](screenshots/scenario_08_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 08 Code Snippet](screenshots/scenario_08_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 08 Terminal Run](screenshots/scenario_08_run.png)
 
 ---
 
@@ -219,8 +235,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
   3. Perform case-insensitive substring membership check using `lower()`.
   4. Generate uppercase and lowercase message transformations.
 - **Expected Outputs:** Full analysis report including vowel count, digit count, space count, and search phrase discovery result.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 09 Windows Terminal Run](screenshots/scenario_09_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 09 Code Snippet](screenshots/scenario_09_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 09 Terminal Run](screenshots/scenario_09_run.png)
 
 ---
 
@@ -232,8 +250,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
   2. Validate: withdrawal > 0, exact multiple of Rs. 500 (`amount % 500 == 0`), and withdrawal <= current balance.
   3. Failed transactions preserve balance and statistics without deduction.
 - **Expected Outputs:** Real-time transaction feedback, remaining balance updates, and final session summary.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 10 Windows Terminal Run](screenshots/scenario_10_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 10 Code Snippet](screenshots/scenario_10_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 10 Terminal Run](screenshots/scenario_10_run.png)
 
 ---
 
@@ -246,8 +266,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
   3. Provide directional hints ("Too high!", "Too low!").
   4. Terminate on exact match or exhaust 7 attempts and reveal secret number.
 - **Expected Outputs:** Attempt counter, win/loss congratulations or game-over message with revealed secret number.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 11 Windows Terminal Run](screenshots/scenario_11_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 11 Code Snippet](screenshots/scenario_11_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 11 Terminal Run](screenshots/scenario_11_run.png)
 
 ---
 
@@ -261,8 +283,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
   4. Calculate attendance percentage = `(present_days / 26) * 100`.
   5. Issue threshold warning if attendance < 80.0%.
 - **Expected Outputs:** Attendance summary (present/absent), attendance percentage, total monthly salary, and low attendance warning if triggered.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 12 Windows Terminal Run](screenshots/scenario_12_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 12 Code Snippet](screenshots/scenario_12_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 12 Terminal Run](screenshots/scenario_12_run.png)
 
 ---
 
@@ -275,8 +299,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
   3. Validate customer count: reject negative values and reject numbers exceeding total capacity.
   4. Calculate unoccupied seats = `total_capacity - customers`.
 - **Expected Outputs:** Formatted row-by-row seat chart, reservation confirmation, and unoccupied count.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 13 Windows Terminal Run](screenshots/scenario_13_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 13 Code Snippet](screenshots/scenario_13_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 13 Terminal Run](screenshots/scenario_13_run.png)
 
 ---
 
@@ -289,8 +315,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
   3. Increment multi-band counters: > 35°C, < 10°C, and between 10°C and 35°C inclusive.
   4. Compute average temperature = `total_temp / days`.
 - **Expected Outputs:** Comprehensive weather report with average, maximum, minimum, and day counts in each temperature band.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 14 Windows Terminal Run](screenshots/scenario_14_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 14 Code Snippet](screenshots/scenario_14_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 14 Terminal Run](screenshots/scenario_14_run.png)
 
 ---
 
@@ -303,8 +331,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
   3. While balance < goal, accept weekly deposits, reject negative deposits without penalty, and accumulate savings.
   4. Allow voluntary early termination via `'stop'`.
 - **Expected Outputs:** Weekly remaining balance updates, total accumulated amount, weeks elapsed, and final target achievement status.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 15 Windows Terminal Run](screenshots/scenario_15_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 15 Code Snippet](screenshots/scenario_15_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 15 Terminal Run](screenshots/scenario_15_run.png)
 
 ---
 
@@ -320,8 +350,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
   3. Maintain category counters, total tickets sold, and total revenue.
   4. Guard against zero division when computing average ticket price.
 - **Expected Outputs:** Ticket count breakdown by category, total tickets, gross box office revenue, and average ticket price.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 16 Windows Terminal Run](screenshots/scenario_16_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 16 Code Snippet](screenshots/scenario_16_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 16 Terminal Run](screenshots/scenario_16_run.png)
 
 ---
 
@@ -334,8 +366,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
   3. Compare against mathematical product, provide instant feedback, and maintain correct/incorrect counters.
   4. Compute percentage score and assign four-tier performance rating.
 - **Expected Outputs:** Question prompts, answer evaluation, final score percentage, and qualitative performance badge.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 17 Windows Terminal Run](screenshots/scenario_17_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 17 Code Snippet](screenshots/scenario_17_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 17 Terminal Run](screenshots/scenario_17_run.png)
 
 ---
 
@@ -349,8 +383,10 @@ Per course instructions, **strict pedagogical constraints** were adhered to acro
   4. Accumulate employee sales breakdown into a formatted display string.
   5. Track highest sales online: if a strictly greater figure arrives, update top employee and reset tie flag; if an exact duplicate arrives, toggle tie flag.
 - **Expected Outputs:** Individual breakdown, total sales, average sales per employee, count of target achievers, and top performer / tie announcement.
-- **Terminal Execution Screenshot:**  
-  ![Scenario 18 Windows Terminal Run](screenshots/scenario_18_run.png)
+- **Python Code Snippet:**  
+  ![Scenario 18 Code Snippet](screenshots/scenario_18_code.png)
+- **Terminal Execution Output:**  
+  ![Scenario 18 Terminal Run](screenshots/scenario_18_run.png)
 
 ---
 
@@ -394,6 +430,7 @@ This exercise deepened our understanding of core computational fundamentals, dem
 ## Submission Checklist Verification
 - [x] All 18 Python scripts created with exact canonical filenames (`scenario_01_admission.py` through `scenario_18_sales_dashboard.py`).
 - [x] Strict compliance with zero advanced features (no lists, dictionaries, custom functions, or external packages).
-- [x] Structured `README.md` complete with GitHub file paths, clean plain-text formulas (no unescaped math errors), scenario index, input-processing-output breakdown, test cases, and reflection.
-- [x] Authentic Windows Terminal PowerShell screenshots generated for all 18 scenarios and stored in `screenshots/`.
+- [x] Structured `README.md` complete with GitHub file paths, clean plain-text formulas (no unescaped math errors), scenario index, input-processing-output breakdown, test cases, code snippet images, and reflection.
+- [x] Clean terminal run screenshots (no ribbons, headings, or window chrome) generated for all 18 scenarios and stored in `screenshots/`.
+- [x] Syntax-highlighted Python code snippet images (`scenario_##_code.png`) generated for all 18 scenarios and stored in `screenshots/`.
 - [x] Archive compressed and verified as `MSDSF25A007_Python_asg_01.zip`.
