@@ -1,0 +1,9 @@
+# Byte-compiled / optimized / URL-cached
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary or test artifacts
+test_extract_check/
+generate_screenshots.py
+.system_generated/
