@@ -1,0 +1,10 @@
+# Requirements for DA-F26-Assgn3: Assignment Python Programming Fundamentals
+# -----------------------------------------------------------------------------
+# Core Assignment Scripts (scenario_01_admission.py to scenario_18_sales_dashboard.py):
+# Strictly rely on Python standard library (Python >= 3.8) with zero external dependencies,
+# satisfying all course constraints (no external packages, no lists/dicts/custom functions).
+#
+# Optional Developer & Verification Tools:
+# (Used for syntax analysis, test verification, and automated asset generation)
+Pillow>=10.0.0
+Pygments>=2.15.0
